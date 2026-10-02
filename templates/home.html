@@ -1,11 +1,11 @@
 <!-- templates/home.html -->
 {% extends "base.html" %}
 {% block content %}
-<h1>Company Homepage</h1>
+<h1>Goblin Goods Homepage</h1>
 <p>The current date and time is: {% now "DATETIME_FORMAT" %}</p>
-<p>There are {{ inventory_list|length }} items of inventory.
+<p>There are {{ inventory|length }} items of inventory.
 <ul>
-{% for item in inventory_list %}
+{% for item in inventory %}
 <li>{{ item }}</li>
 {% endfor %}
 </ul>
@@ -13,7 +13,7 @@
 {% comment %}Add more content here!{% endcomment %}
 {% endblock %}
 
-<h1>Company Homepage</h1>
+<h1>Goblin Goods Homepage</h1>
 <p>The current date and time is: {% now "DATETIME_FORMAT" %}</p>
 <p>There are {{ inventory|length }} items of inventory.</p>
 <ul>
